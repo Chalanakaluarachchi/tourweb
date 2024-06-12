@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+
+.page {
+  width:auto;
+}
+
+.titlebar {
+  width : 80%;
+  margin-top: 4vh;
+  margin-bottom: 5vh;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 35px;
+  background-color: #06934c;
+}
+
+.titlebar .title p {
+  color: white;
+  font-family: Poppins;
+  font-size: 26pt;
+  font-weight: 600;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: justify;
+}
+
+.container .card {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 9px;
+  margin-bottom: 9px;
+  padding-top: 6px;
+  padding-bottom: 10px;
+  width: 50%;
+  height: 5vh;
+  border: 3px solid #06934c;
+  border-radius: 35px;
+}
+
+.container .card p {
+  font-size: 14pt;
+  font-weight: 400;
+  text-align: center;
+
+}
+
+.container .add {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  margin-bottom: auto;
+  flex-wrap:space-between;
+  flex-direction: column;
+}
+
+.container .add #add-todo-text {
+  height: 4vh;
+  font-size: 14pt;
+  text-align: left;
+  font-weight: 400;
+  margin-bottom: 3vh;
+  border: 1px solid #06934c;
+  border-radius: 13px;
+  padding-left: 10px;
+  padding-top: 3px;
+  padding-bottom: 5px;
+  padding-right: 10px;
+}
+
+.container .add #submit-todo {
+  width: 40%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2vh;
+  margin-bottom: auto;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+  font-weight: 600;
+  font-size: 14pt;
+  color:white;
+  background-color: #06934c;
+  border: none;
+  border-radius: 13px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+
+.container .add #submit-todo:hover {
+  size: 0.9;
+  background-color: #069349;
+  transition: 0.2s;
+}

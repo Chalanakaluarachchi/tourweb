@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="./assets/styles/index.css">
+    <link rel="stylesheet" href="./assets/styles/about.css">
+
+</head>
+<body style="background-color:powderblue;"></body>
+<body>
+  <header>
+    <a href="index.html" class="brand">Travel</a>
+    <div class="menu-btn"></div>
+    <div class="navigation">
+      <div class="navigation-items">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="places.html">Places</a>
+        <a href="todo.html">To-do</a>
+        <a href="contact.html">Contacts</a>
+      </div>
+    </div>
+  </header>
+
+<section class="services" id="services">
+
+  <!-- <div class="spacer"><hr/></div> -->
+
+  <div class="heading">
+    <h1>
+        <span>S</span>
+        <span>E</span>
+        <span>R</span>
+        <span>V</span>
+        <span>I</span>
+        <span>C</span>
+        <span>E</span>
+        <span>S</span>
+    </h1>
+  </div>
+
+    <div class="box-container">
+
+        <div class="box">
+            <i class="fas fa-hotel"></i>
+            <h3>Affordable Hotels</h3>
+            <p>Sri Lanka is a country with many affordable accomadation options.
+               You can easily find a place according to your personal budget.
+            </p>
+            <img src="./assets/img/hotel-img-1.jpeg" alt="hotel-img" />
+            <img src="./assets/img/hotel-img-2.jpeg" alt="hotel-img" />
+        </div>
+
+        <div class="box">
+            <i class="fas fa-utensils"></i>
+            <h3>Food and Drinks</h3>
+            <p>Sri Lanka Has a large varitey of food. With a litlle South Indian influence and
+               lots of spices, you can enjoy some of the best dishes in the world.
+            </p>
+        </div>
+        
+        <div class="box">
+            <i class="fas fa-globe-asia"></i>
+            <h3>Around The Country</h3>
+            <p>Srilanka has beautiful traveling places around the country.<br>
+            More info our <a href="places.html">places</a> webpage</p>
+        </div>
+        <div class="box">
+            <i class="fas fa-plane"></i>
+            <h3>Transport services</h3>
+            <p>Srilanka has Faster,safety and quality Transpoart services.<br>
+               ex-:Uber, pickme</p>
+        </div>
+
+    </div>
+
+    <div class="spacer"><hr/></div>
+
+  <div class="heading">
+    <h1>
+      <span>R</span>
+      <span>E</span>
+      <span>S</span>
+      <span>O</span>
+      <span>U</span>
+      <span>R</span>
+      <span>C</span>
+      <span>E</span>
+      <span>S</span>
+    </h1>
+  </div>
+
+  <div class="box-container">
+
+      <div class="box">
+          <h3>Sri Lanka Tourism - The Official Website of Sri Lanka Tourism</h3>
+          <a href="https://www.srilanka.travel" target="_blank">https://www.srilanka.travel</a>
+      </div>
+      <div class="box">
+        <h3>Sri Lanka Travel and Tourism</h3>
+        <a href="https://www.srilankatravelandtourism.com" target="_blank">https://www.srilankatravelandtourism.com</a>
+      </div>
+      <div class="box">
+        <h3>Sri Lanka Tourism Alliance</h3>
+        <a href="https://www.srilankatourismalliance.com" target="_blank">https://www.srilankatourismalliance.com</a>
+      </div>
+
+
+  </div>
+
+</section>
+
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<script type="text/javascript">
+//Javacript for responsive navigation menu
+const menuBtn = document.querySelector(".menu-btn");
+const navigation = document.querySelector(".navigation");
+
+menuBtn.addEventListener("click", () => {
+  menuBtn.classList.toggle("active");
+  navigation.classList.toggle("active");
+});
+</script>
+
+</body>
+</html>

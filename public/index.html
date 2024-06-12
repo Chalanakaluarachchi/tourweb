@@ -1,17 +1,101 @@
 <!DOCTYPE html>
-<html lang="">
+<html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
-    <title><%= htmlWebpackPlugin.options.title %></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Sri Lanka</title>
+    <link rel="stylesheet" href="./assets/styles/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
   </head>
   <body>
-    <noscript>
-      <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
-    </noscript>
-    <div id="app"></div>
-    <!-- built files will be auto injected -->
+
+    <header>
+      <a href="index.html" class="brand">Srilanka</a>
+      <div class="menu-btn"></div>
+      <div class="navigation">
+        <div class="navigation-items">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="places.html">Places</a>
+          <a href="todo.html">To-do</a>
+          <a href="contact.html">Contacts</a>
+        </div>
+      </div>
+    </header>
+
+    <section class="home">
+      <video class="video-slide active" src="./assets/videos/1.mp4" autoplay muted loop></video>
+      <video class="video-slide" src="./assets/videos/1.mp4" autoplay muted loop></video>
+      <video class="video-slide" src="./assets/videos/1.mp4" autoplay muted loop></video>
+      <video class="video-slide" src="./assets/videos/1.mp4" autoplay muted loop></video>
+      <video class="video-slide" src="./assets/videos/1.mp4" autoplay muted loop></video>
+     
+      <div class="content active">
+        <h1>Perl of<br><span>Indian Ocean</span></h1>
+        <p>Rain forests, deserts, mountains, and sandy beaches abound in Sri Lanka's landscape. In this island nation, you can witness both the largest land animal and the largest marine animal on the same day - learn more about which species they are in the country profile...</p>
+        
+      </div>
+      <div class="content">
+        <h1>World Best <br><span>Country</span></h1>
+        <p>Sri Lanka has been ranked fifth from among 20 best countries to visit in the world by Conde Nast Traveler Magazine on Readers' Choice 2021. Condé Nast Traveler is a popular and influential luxury and lifestyle travel magazine.</p>
+        
+      </div>
+      <div class="content">
+        <h1>Beautiful<br><span>Country</span></h1>
+        <p>Sri Lanka is not only beautiful because of the amazing beaches or the rolling, perfect tea hills. Sri Lanka is not only beautiful because of the exotic wildlife that roams much of the island. Sri Lanka is not only beautiful because of the breath taking waterfalls and temples. ... Some of my best friends are Sri Lankan.</p>
+        
+      </div>
+      <div class="media-icons">
+        <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://twitter.com/?lang=en" target="_blank"><i class="fab fa-twitter"></i></a>
+      </div>
+      <div class="slider-navigation">
+        <div class="nav-btn active"></div>
+        <div class="nav-btn"></div>
+        <div class="nav-btn"></div>
+      </div>
+    </section>
+
+    <script type="text/javascript">
+    //Javacript for responsive navigation menu
+    const menuBtn = document.querySelector(".menu-btn");
+    const navigation = document.querySelector(".navigation");
+
+    menuBtn.addEventListener("click", () => {
+      menuBtn.classList.toggle("active");
+      navigation.classList.toggle("active");
+    });
+
+    //Javacript for video slider navigation
+    const btns = document.querySelectorAll(".nav-btn");
+    const slides = document.querySelectorAll(".video-slide");
+    const contents = document.querySelectorAll(".content");
+
+    var sliderNav = function(manual){
+      btns.forEach((btn) => {
+        btn.classList.remove("active");
+      });
+
+      slides.forEach((slide) => {
+        slide.classList.remove("active");
+      });
+
+      contents.forEach((content) => {
+        content.classList.remove("active");
+      });
+
+      btns[manual].classList.add("active");
+      slides[manual].classList.add("active");
+      contents[manual].classList.add("active");
+    }
+
+    btns.forEach((btn, i) => {
+      btn.addEventListener("click", () => {
+        sliderNav(i);
+      });
+    });
+    </script>
+
   </body>
 </html>
